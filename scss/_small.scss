@@ -58,7 +58,7 @@ main {
     padding: 0 2%;
     min-height: 10rem;
 }
-*----------- MAIN --------------*/
+/*----------- MAIN --------------*/
 main {
   padding: 0 2%;
   min-height: 20rem;
@@ -81,7 +81,7 @@ main form legend {
 main form label.top, main div {
   display: block;
   padding-top: 1rem;
-  color: #f0e850;
+  color: #97670e;
   font-size: 0.8rem;
   padding-bottom: 1rem;
 }
@@ -89,7 +89,7 @@ main form label.top input, main form label.top select {
   display: block;
   font-weight: 1rem;
   border: solid 1px #999;
-  border-radius: px;
+  border-radius: 2px;
   padding: 0.75rem;
   color: #555;
   width: 100%;
@@ -106,7 +106,7 @@ main form label.sbs input {
 }
 main form input.submitBtn {
   border: none;
-  background-color: #f14702;
+  background-color: #b4a699;
   color: white;
   border-radius: 1rem;
   padding: 0.75rem 1.5rem;
@@ -123,10 +123,10 @@ main form label.top input:required:valid {
 
 /*----------- FOOTER --------------*/
 footer {
-  background-color: #f6e7d8;
+  background-color:  #2f2e2a;
   padding: 1rem 2%;
   text-align: center;
-  color: black;
+  color: rgb(243, 236, 236);
 }
 
 

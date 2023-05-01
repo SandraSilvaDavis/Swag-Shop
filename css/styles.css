@@ -5,7 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
- html {
+html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
@@ -323,94 +323,68 @@ html {
 body {
   font-size: 16px;
   font-family: Verdana, sans-serif;
-  min-width: 320px;
-}
-
-#pageWrapper {
-  position: relative;
-  overflow-x: hidden;
-}
-
-.moveOver > .content {
-  transform: translateX(-180px);
-}
-
-.content {
-  transition: transform 500ms ease;
 }
 
 /*----------- HEADER --------------*/
 header {
-  display: grid;
-  grid-template-columns: 50px auto 48px;
-  align-items: center;
-  padding: 0.5rem 2vw;
-  background-color: #f6e7d8;
+  padding: 0.5rem 2%;
+  background-color: #ddd;
 }
 
 header h1 {
-  font-size: 1.6rem;
   margin: 0;
-  padding-left: 4rem;
-  color: black;
 }
 
-button {
-  width: 48px;
-  height: 48px;
+header h2 {
   margin: 0;
-  align-self: start;
-  background: none;
-  border: none;
-  font-size: 1.5rem;
-  text-align: right;
-  color: #f14702;
+  font-weight: normal;
 }
 
 /*----------- NAVIGATION --------------*/
 nav {
-  background: #eee;
-  width: 180px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  transform: translateX(100%);
-}
-nav div {
-  display: block;
-  text-align: center;
-  padding: 1.5rem;
-  font-size: 1.1rem;
-  background-color: #f14702;
-  color: #eee;
+  background-color: #666;
 }
 
 nav ul {
-  border-bottom: 1px solid #eee;
-  border-top: 1px solid #eee;
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
+nav ul li {
+  float: left;
+  width: 25%;
+}
+
 nav ul li a {
   display: block;
-  padding: 0.9rem 2vw;
+  background-color: #444;
+  color: #eee;
+  border-left: 1px solid #777;
+  padding: 0.5rem 0;
   text-decoration: none;
-  text-align: right;
-  color: black;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+nav ul li:first-child a {
+  border-left: none;
 }
 
 nav ul li a:hover {
-  background-color: gray;
-  color: white;
+  background-color: #eee;
+  color: #333;
 }
 
 nav ul li.active a {
-  background-color: #f14702;
-  color: #f6e7d8;
+  background-color: #000;
+  color: #fff;
+}
+
+/*----------- MAIN --------------*/
+main {
+  padding: 0 2%;
+  min-height: 10rem;
 }
 
 /*----------- MAIN --------------*/
@@ -419,49 +393,57 @@ main {
   min-height: 20rem;
   /*----------- FORM --------------*/
 }
+
 main form fieldset {
   margin: 2rem 0;
   border: 1px solid black;
   border-radius: 10px;
   padding: 0.5rem 2%;
 }
+
 main form fieldset div {
   padding-bottom: 0;
 }
+
 main form legend {
   color: #555;
   margin: 0 1rem;
   padding: 0 0.5rem;
 }
+
 main form label.top, main div {
   display: block;
   padding-top: 1rem;
-  color: #f0e850;
+  color: #97670e;
   font-size: 0.8rem;
   padding-bottom: 1rem;
 }
+
 main form label.top input, main form label.top select {
   display: block;
   font-weight: 1rem;
   border: solid 1px #999;
-  border-radius: px;
+  border-radius: 2px;
   padding: 0.75rem;
   color: #555;
   width: 100%;
   max-width: 20rem;
   background-color: rgba(0, 0, 0, 0.1);
 }
+
 main form label.sbs {
   display: block;
   padding: 0.5rem 0;
   color: #555;
 }
+
 main form label.sbs input {
   margin-right: 0.5rem;
 }
+
 main form input.submitBtn {
   border: none;
-  background-color: #f14702;
+  background-color: #b4a699;
   color: white;
   border-radius: 1rem;
   padding: 0.75rem 1.5rem;
@@ -469,19 +451,28 @@ main form input.submitBtn {
   width: 96%;
   max-width: 20rem;
 }
+
 main form label.top input:required {
   border-left: red solid 6px;
 }
+
 main form label.top input:required:valid {
   border-left: green solid 6px;
 }
 
 /*----------- FOOTER --------------*/
 footer {
-  background-color: #f6e7d8;
+  background-color: #2f2e2a;
   padding: 1rem 2%;
   text-align: center;
-  color: black;
+  color: rgb(243, 236, 236);
+}
+
+/*----------- FOOTER --------------*/
+footer {
+  background-color: #ddd;
+  padding: 0.5rem 2%;
+  text-align: center;
 }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
@@ -494,63 +485,33 @@ footer {
 @media only screen and (min-width: 35rem) {
   /*----------- BODY --------------*/
   /*----------- HEADER --------------*/
-  #headerWrapper {
-    border-bottom: 1px solid #eee;
-    background-color: #f6e7d8;
-  }
-  header {
-    grid-template-columns: 51px auto auto;
-  }
-  header div#phone {
-    display: block;
-    justify-self: end;
-  }
-  header div#phone a {
-    color: #151536;
-    text-decoration: none;
-    font-weight: 300;
-    font-size: 1.5rem;
-  }
-  header div#phone a:hover {
-    color: #f14702;
-  }
   /*----------- NAVIGATION --------------*/
+  nav ul {
+    margin-left: 2%;
+  }
+  nav ul li {
+    width: auto;
+  }
+  nav ul li:first-child a {
+    border-left: 1px solid #777;
+  }
+  nav ul li:last-child a {
+    border-right: 1px solid #777;
+  }
+  nav ul li a {
+    padding: 0.5rem 1rem;
+  }
   /*----------- MAIN --------------*/
   /*----------- FOOTER --------------*/
 } /* end of media query */
 @media only screen and (min-width: 64rem) {
-  header, nav, footer, main {
-    max-width: 75rem;
+  header, nav, main, footer {
+    max-width: 64rem;
     margin: auto;
   }
   /*----------- BODY --------------*/
   /*----------- HEADER --------------*/
   /*----------- NAVIGATION --------------*/
-  #hamburgerBtn {
-    display: none;
-  }
-  nav {
-    position: static;
-    transform: translateX(0);
-    width: auto;
-  }
-  nav div {
-    display: none;
-  }
-  nav ul li a {
-    border: none;
-    border-right: 1px solid rgba(0, 0, 0, 0.2);
-  }
-  nav ul {
-    display: flex;
-    margin-left: 2%;
-    justify-content: left;
-    padding-right: 8vw;
-    border-left: 1px solid rgba(0, 0, 0, 0.2);
-  }
   /*----------- MAIN --------------*/
-  form label.sbs {
-    padding: 0.4rem 0;
-  }
   /*----------- FOOTER --------------*/
 } /* end of media query */
