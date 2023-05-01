@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Fill Me In">
+<meta name="author" content="Sandra Davis">
+
+<!-- This start file was build by Paul Cheney  -->
+<title>Sandra Davis Swag Shop</title>
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- FONT AWESOME OLD LINK -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+<!-- FONT AWESOME NEW KIT LINK -->
+<script src="https://kit.fontawesome.com/7eb37c2240.js" crossorigin="anonymous"></script>
+<!-- STYLE SHEETS -->
+<link href="css/styles.css" rel="stylesheet">
+     
+</head>
+
+
+<body>
+<!-- HEADER HERE -->
+
+<div id="pageWrapper">
+
+<div class="content">
+
+
+    <header>
+        <img src="images/logo.png" height="100" width="100" alt="logo">
+        <h1>Sandra's Place</h1>
+        <button id="hamburgerBtn"> &#9776;</button>
+    </header>
+
+    
+<!-- NAVIGATION HERE -->
+
+    <nav>
+
+        <div>Fabric Bags</div>
+        <ul >
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Local Artist</a></li>
+            <li><a href="#">The Shop</a></li> 
+            <li class="active"><a href="#">Order</a></li>
+            <li><a href="#">Reviews</a></li>    
+        </ul>
+    </nav>
+
+
+    
+<!-- CONTENT HERE -->
+<div id="mainWrapper"></div>
+    <main>
+
+        <h1>Order</h1>
+
+        <form method="get" action="thanks.html">
+
+            <fieldset>
+                <legend>Customer Information</legend>
+                <label class="top"> First Name* <input type="text" name="fname" required> </label>
+                <label class="top"> Last  Name* <input type="text" name="lname" required> </label>
+                <label class="top"> Phone <input type="tel" name="phone" placeholder="099876655"> </label>
+                <label class="top"> Email*<input type="email" name="email" placeholder="artist@gmail.com" required> </label>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Swag Information</legend>
+                
+                <label class="top">Date needed<input type="date" name="completeDate"></label>
+
+                <label class="top"> Business Name <input type="text" name="Businessname" > </label>
+
+                <label class="top"> Business URL <input type="url" name="url" placeholder="http://"> </label>
+
+                <label class="top"> Color 
+                    <select name="subject">
+                    <option value=""> PLEASE SELECT  </option>
+                    <option value="red"> Pink </option>
+                    <option value="blue">Multicolor</option>
+                    <option value="yellow"> Green </option>
+                    <option value="green"> Orange </option>
+                     </select>
+                </label>
+
+                <label class="top">Quantity <input type="number" name="quantity"> </label>
+
+
+
+                <div>Material</div>
+                <label class="sbs"><input type="radio" name="material" value="aluminum">Aluminum</label>
+                <label class="sbs"><input type="radio" name="material" value="plastic">Plastic</label>
+
+            </fieldset>
+
+
+            <fieldset>
+                <legend>Payment Information</legend>
+                <label class="top"> Name on Card <input type="text" name="nameoncard" > </label>
+                
+                <label class="top">Credit Card Number:
+                <input type="tel"  placeholder="xxxx xxxx xxxx xxxx"></label>
+ 
+                <label class="top">Expiration Date<input name="experationdate" type="text" placeholder="MM/YYYY"></label>
+
+            </fieldset>
+
+
+            <label><input type="submit" value="Order My Swag" class="submitBtn">
+
+            </label>
+
+
+
+
+
+
+        </form>
+
+       
+      
+        
+
+    </main>
+
+</div> <!-- end of main wrapper--> 
+    
+<!-- FOOTER HERE -->   
+<div id="footerWrapper"></div>
+    <footer>
+        &copy; 2023 &bull; Sandra Davis &bull; Login
+    </footer>
+</div> <!-- end of footer wrapper--> 
+
+</div> <!-- end of content--> 
+
+</div> <!-- end of page wrapper--> 
+
+<script src="js/scripts.js"></script>
+
+</body>
+
+</html>
